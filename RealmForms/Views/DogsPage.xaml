@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	Title="Dogs"
+	BackgroundColor="White"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:viewcells="clr-namespace:RealmForms.Controls.ViewCells;assembly=RealmForms"
+	x:Class="RealmForms.Views.DogsPage">
+	<ContentPage.Content>
+		<ListView
+			x:Name="dogsListView"
+			SeparatorVisibility="None"
+			HasUnevenRows="true">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<viewcells:DogViewCell />
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>

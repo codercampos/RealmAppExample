@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using RealmForms.Views;
+using Xamarin.Forms;
 
 namespace RealmForms
 {
@@ -8,7 +9,11 @@ namespace RealmForms
 		{
 			InitializeComponent();
 
-			MainPage = new RealmFormsPage();
+			MainPage = new NavigationPage(new DogsPage())
+			{
+				BarTextColor = Color.White,
+				BarBackgroundColor = Color.Gray
+			};
 		}
 
 		protected override void OnStart()

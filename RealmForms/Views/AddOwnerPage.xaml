@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	BackgroundColor="White"
+	xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RealmForms.Views.AddOwnerPage">
+	<ContentPage.Content>
+		<StackLayout Padding="20">
+			<Label Text="Owner's Name" TextColor="Black" FontAttributes="Bold" VerticalOptions="EndAndExpand" />
+			<Entry x:Name="ownerName" Placeholder="Example: John" TextColor="Black" PlaceholderColor="Silver" />
+			<Label Text="Dog's name" TextColor="Black" FontAttributes="Bold" />
+			<Entry x:Name="dogName" Placeholder="Example: Rex" TextColor="Black" PlaceholderColor="Silver" />
+			<Label Text="Dog's Age" TextColor="Black" FontAttributes="Bold" />
+			<Entry x:Name="dogAge" Keyboard="Numeric" Placeholder="Example: 4" TextColor="Black" PlaceholderColor="Silver" />
+			<Button BackgroundColor="Gray" TextColor="White" Text="Save" VerticalOptions="StartAndExpand" Clicked="SaveButton_Clicked" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
